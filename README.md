@@ -25,8 +25,32 @@ Here, there's a simple test suite to ensure the functionality of the Automation 
 Setup: Before the tests run, the Automation contract is deployed to the network.
 Functionality Test: The main test involves trying to invoke the pressCounter function to check if the counter can be incremented and if the time restrictions apply correctly.
 
+PriceConsumer Smart Contract
 
+Integrated with Chainlink:
+The contract uses Chainlink's AggregatorV3Interface to access external price data.
+Specifically, it taps into the BTC/ETH exchange rate from a predefined Chainlink aggregator.
 
+Key Functions:
+getLatestPrice: Fetches and returns the current BTC/ETH exchange rate.
+Web3 Integration with React App (Oracle)
+
+Blockchain Connectivity:
+Uses Web3 to connect to the Ethereum network via Infura.
+It identifies the network ID and checks for the deployed PriceConsumer contract on that network.
+User Interface:
+
+Displays details about the network, the aggregator, and its address.
+Shows the latest fetched BTC/ETH exchange rate.
+Users can click "Fetch Price" to retrieve and view the latest exchange rate from the blockchain.
+Testing the PriceConsumer Contract
+
+Test Setup:
+Before any tests run, the PriceConsumer contract is deployed to the network.
+Functionality Test:
+
+A test (getLatestPrice should return a value) checks if invoking the getLatestPrice function successfully returns a BTC/ETH price value. The value returned should be greater than 0.
+In summary, the Oracles project serves as a bridge to access the latest BTC/ETH exchange rate using Chainlink oracles and presents this data to users via a simple web interface. It also includes tests to ensure the contract's correct operation.
 
 
 
