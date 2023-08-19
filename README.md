@@ -2,7 +2,7 @@
 
 Welcome to my GitHub Projects - Here will be a taste of the projects I have been working on: 
 
-Chainlink Automations: 
+**Chainlink Automations:** 
 
 Automation Smart Contract
 
@@ -25,7 +25,7 @@ Here, there's a simple test suite to ensure the functionality of the Automation 
 Setup: Before the tests run, the Automation contract is deployed to the network.
 Functionality Test: The main test involves trying to invoke the pressCounter function to check if the counter can be incremented and if the time restrictions apply correctly.
 
-PriceConsumer Smart Contract
+**PriceConsumer Smart Contract:**
 
 Integrated with Chainlink:
 The contract uses Chainlink's AggregatorV3Interface to access external price data.
